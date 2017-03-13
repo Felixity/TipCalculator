@@ -33,6 +33,10 @@ class TipViewController: UIViewController, UITextFieldDelegate, DataSourceDelega
     
     override func viewDidLoad()
     {
+        super.viewDidLoad()
+        
+        self.billField.becomeFirstResponder()
+        
         background.frame = self.view.bounds
         
         billField.delegate = self
