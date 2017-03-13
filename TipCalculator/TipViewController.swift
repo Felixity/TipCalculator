@@ -27,7 +27,8 @@ class TipViewController: UIViewController, UITextFieldDelegate, DataSourceDelega
     
     let defaults = UserDefaults.standard
     
-    private let background = CAGradientLayer().purpuleGreenGradientColor()
+    private let background = CAGradientLayer().createGradientColor()
+    
     private var ratingButtonsArray = [UIButton]()
     
     override func viewDidLoad()

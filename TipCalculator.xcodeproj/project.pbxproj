@@ -17,7 +17,7 @@
 		D3A45B9E1DD3A4F1005C97D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3A45B9D1DD3A4F1005C97D2 /* Assets.xcassets */; };
 		D3A45BA11DD3A4F1005C97D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3A45B9F1DD3A4F1005C97D2 /* LaunchScreen.storyboard */; };
 		D3A45BAC1DD3A4F1005C97D2 /* TipCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A45BAB1DD3A4F1005C97D2 /* TipCalculatorTests.swift */; };
-		D3A45BB71DD3BDCE005C97D2 /* GradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A45BB61DD3BDCE005C97D2 /* GradientLayer.swift */; };
+		D3B946151E767712009742E7 /* GradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B946141E767712009742E7 /* GradientLayer.swift */; };
 		D3C458851DD5101200F0C9FE /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C458841DD5101200F0C9FE /* DataSource.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +46,7 @@
 		D3A45BA71DD3A4F1005C97D2 /* TipCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A45BAB1DD3A4F1005C97D2 /* TipCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorTests.swift; sourceTree = "<group>"; };
 		D3A45BAD1DD3A4F1005C97D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D3A45BB61DD3BDCE005C97D2 /* GradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientLayer.swift; path = ../../Calculator/Calculator/GradientLayer.swift; sourceTree = "<group>"; };
+		D3B946141E767712009742E7 /* GradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientLayer.swift; sourceTree = "<group>"; };
 		D3C458841DD5101200F0C9FE /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,27 +68,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D308ECE81E2C11AF002566C7 /* controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = controller;
-			sourceTree = "<group>";
-		};
-		D308ECE91E2C11B8002566C7 /* view */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = view;
-			sourceTree = "<group>";
-		};
-		D308ECEA1E2C11C0002566C7 /* resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = resources;
-			sourceTree = "<group>";
-		};
 		D3A45B8A1DD3A4F1005C97D2 = {
 			isa = PBXGroup;
 			children = (
@@ -110,9 +89,7 @@
 		D3A45B951DD3A4F1005C97D2 /* TipCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				D308ECEA1E2C11C0002566C7 /* resources */,
-				D308ECE91E2C11B8002566C7 /* view */,
-				D308ECE81E2C11AF002566C7 /* controller */,
+				D3B946141E767712009742E7 /* GradientLayer.swift */,
 				D32637181DD66C6E00A6F584 /* PickerViewTableCell.swift */,
 				D3A45B961DD3A4F1005C97D2 /* AppDelegate.swift */,
 				D3A45B981DD3A4F1005C97D2 /* TipViewController.swift */,
@@ -122,7 +99,6 @@
 				D3C458841DD5101200F0C9FE /* DataSource.swift */,
 				D31B74301DD448EC004EDEE0 /* SettingsTableCell.swift */,
 				D3A45B9D1DD3A4F1005C97D2 /* Assets.xcassets */,
-				D3A45BB61DD3BDCE005C97D2 /* GradientLayer.swift */,
 				D3A45B9F1DD3A4F1005C97D2 /* LaunchScreen.storyboard */,
 				D3A45BA21DD3A4F1005C97D2 /* Info.plist */,
 			);
@@ -245,11 +221,11 @@
 			files = (
 				D3C458851DD5101200F0C9FE /* DataSource.swift in Sources */,
 				D31B74331DD44AE3004EDEE0 /* TipCalculatorSettings.swift in Sources */,
+				D3B946151E767712009742E7 /* GradientLayer.swift in Sources */,
 				D3A45B991DD3A4F1005C97D2 /* TipViewController.swift in Sources */,
 				D31B74311DD448EC004EDEE0 /* SettingsTableCell.swift in Sources */,
 				D3A45B971DD3A4F1005C97D2 /* AppDelegate.swift in Sources */,
 				D32637191DD66C6E00A6F584 /* PickerViewTableCell.swift in Sources */,
-				D3A45BB71DD3BDCE005C97D2 /* GradientLayer.swift in Sources */,
 				D32637131DD5264D00A6F584 /* SettingsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

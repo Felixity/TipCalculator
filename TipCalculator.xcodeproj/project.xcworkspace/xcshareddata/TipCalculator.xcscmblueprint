@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A80A5648CFDD03020B78A18130CF02D217AB4161",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A80A5648CFDD03020B78A18130CF02D217AB4161" : 9223372036854775807,
+    "78F497C319308FF5EFF01A333BC384D1F55F8CA5" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B0393C2D-F246-4690-A347-290F8398C647",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A80A5648CFDD03020B78A18130CF02D217AB4161" : "TipCalculator\/",
+    "78F497C319308FF5EFF01A333BC384D1F55F8CA5" : "Calculator\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TipCalculator",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TipCalculator.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/LauraPrichici\/calculator.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "78F497C319308FF5EFF01A333BC384D1F55F8CA5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Felixity\/TipCalculator.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A80A5648CFDD03020B78A18130CF02D217AB4161"
+    }
+  ]
+}

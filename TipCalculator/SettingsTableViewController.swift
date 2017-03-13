@@ -27,7 +27,7 @@ class SettingsTableViewController: UITableViewController, RatingPickerDelegate
     
     var pickerCellRowHeight: CGFloat?
     
-    private let background = CAGradientLayer().purpuleGreenGradientColor()
+    private let background = CAGradientLayer().createGradientColor()
     
     let defaults = UserDefaults.standard
     
