@@ -54,4 +54,7 @@ struct DataSource
          "defaultTippingRate"   : "$",
          "pickerValues"         : "\(DataSource.currencyMappingSymbols.keys.joined(separator: ","))"]
     ]
+    
+    /* Constant values used to remember the bill amount across app restarts  */
+    static let goBack10Minutes = -600
 }

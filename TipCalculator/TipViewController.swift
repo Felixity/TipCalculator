@@ -58,6 +58,8 @@ class TipViewController: UIViewController, UITextFieldDelegate, DataSourceDelega
         calculateTip()
         
         self.view.layer.insertSublayer(background, at: 0)
+        
+        appBecomeActiveEventProcessing()
     }
     
     func initFirstLaunch()
@@ -181,7 +183,55 @@ class TipViewController: UIViewController, UITextFieldDelegate, DataSourceDelega
             let nextViewController = segue.destination as! SettingsTableViewController
             nextViewController.delegate = self
         }
-    }    
+    }
+    
+    func appBecomeActiveEventProcessing()
+    {
+        //remember the bill from a recent previous session (60*10 = 10 minutes)
+        let center = NotificationCenter.default
+        let queue = OperationQueue.main
+        
+        center.addObserver(forName: NSNotification.Name.UIApplicationDidBecomeActive, object: nil, queue: queue)
+        { _ in
+            self.restoreBillAcrossRestart()
+            self.billField.becomeFirstResponder()
+        }
+        
+        center.addObserver(forName: NSNotification.Name.UIApplicationWillResignActive, object: nil, queue: queue)
+        { _ in
+            self.saveCurrentSession()
+        }
+    }
+    
+    private func restoreBillAcrossRestart()
+    {
+        /* Get from UserDefaults the time when app was running previously and check if it was no more than 10 min since then */
+        if let dateOfLastSession = defaults.object(forKey: "lastSession") as? Date
+        {
+            var currentDate = Date()
+            let goBack10Minutes = TimeInterval(DataSource.goBack10Minutes)
+            currentDate.addTimeInterval(goBack10Minutes) // current time goes back 10 minutes in order to check if the app was running at that time
+            if currentDate < dateOfLastSession
+            {
+                /* Get the stored bill from last session */
+                billField.text = (defaults.object(forKey: "restoreLastBill") as? String) ?? ""
+            }
+            else
+            {
+                /* Displays blank */
+                billField.text = ""
+            }
+        }
+    }
+    
+    private func saveCurrentSession()
+    {
+        /* Save in UserDefaults the current date and the last bill value */
+        let currentData = Date()
+        UserDefaults.standard.set(currentData, forKey: "lastSession")
+        UserDefaults.standard.set(self.billField.text, forKey: "restoreLastBill")
+        UserDefaults.standard.synchronize()
+    }
 }
 
 extension String
