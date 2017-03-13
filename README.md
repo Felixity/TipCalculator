@@ -15,19 +15,20 @@ The following **required** functionality is complete:
 
 The following **optional** features are implemented:
 * [ ] UI animations
-* [ ] Remembering the bill amount across app restarts (if <10mins)
+* [x] Remembering the bill amount across app restarts (if <10mins)
 * [x] Using locale-specific currency and currency thousands separators.
-* [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
+* [x] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [x] The bill can be split between 2 up to 10 persons
+- [x] The user can configure it's own tip rating and can go back to factory settings
 
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
-[![Demo clip of TipCalculator app](http://i.imgur.com/wbQncWx.gifv)](http://i.imgur.com/wbQncWx.gifv)
+[![Demo clip of TipCalculator app](http://i.imgur.com/92YxuUn.gifv)](http://i.imgur.com/92YxuUn.gifv) 
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
